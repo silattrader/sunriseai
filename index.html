@@ -3,14 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sunrise.ai - Transforming the Future with AI | TW Private Limited Company</title>
+    <title>TW AI Agency - AI & Business Workflow Automation</title>
     <style>
         :root {
-            --primary-color: #FF6B6B;
-            --secondary-color: #4ECDC4;
-            --text-color: #2C3E50;
-            --bg-color: #FFFFFF;
-            --gradient: linear-gradient(135deg, #FF6B6B, #FFE66D);
+            --primary-color: #2563eb;
+            --secondary-color: #1e40af;
+            --text-color: #1f2937;
+            --bg-color: #ffffff;
+            --accent-color: #dbeafe;
         }
 
         * {
@@ -31,7 +31,6 @@
             padding: 0 20px;
         }
 
-        /* Header Styles */
         header {
             background: var(--bg-color);
             padding: 1rem 0;
@@ -54,9 +53,8 @@
             color: var(--primary-color);
         }
 
-        /* Hero Section */
         .hero {
-            background: var(--gradient);
+            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
             padding: 120px 0 60px;
             text-align: center;
             color: white;
@@ -70,23 +68,41 @@
         .hero p {
             font-size: 1.2rem;
             max-width: 600px;
-            margin: 0 auto;
+            margin: 0 auto 2rem;
         }
 
-        /* Features Section */
-        .features {
-            padding: 80px 0;
+        .btn {
+            display: inline-block;
+            padding: 1rem 2rem;
             background: var(--bg-color);
+            color: var(--primary-color);
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: transform 0.3s ease;
         }
 
-        .features-grid {
+        .btn:hover {
+            transform: translateY(-2px);
+        }
+
+        .section {
+            padding: 80px 0;
+        }
+
+        .section-title {
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+
+        .process-steps {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
             gap: 30px;
             margin-top: 40px;
         }
 
-        .feature-card {
+        .step-card {
             padding: 30px;
             border-radius: 10px;
             background: white;
@@ -94,200 +110,136 @@
             transition: transform 0.3s ease;
         }
 
-        .feature-card:hover {
+        .step-card:hover {
             transform: translateY(-5px);
         }
 
-        /* About Section */
-        .about {
-            padding: 80px 0;
-            background: #f8f9fa;
-        }
-
-        /* Contact Section */
-        .contact {
-            padding: 80px 0;
-            background: var(--bg-color);
-        }
-
-        .contact-form {
-            max-width: 600px;
-            margin: 0 auto;
-        }
-
-        .form-group {
-            margin-bottom: 1.5rem;
-        }
-
-        .form-group label {
-            display: block;
-            margin-bottom: 0.5rem;
-            color: var(--text-color);
-            font-weight: 500;
-        }
-
-        .form-group input,
-        .form-group select,
-        .form-group textarea {
-            width: 100%;
-            padding: 0.75rem;
-            border: 1px solid #ddd;
-            border-radius: 4px;
-            font-size: 1rem;
-            color: var(--text-color);
-            transition: border-color 0.3s ease;
-        }
-
-        .form-group textarea {
-            height: 100px;
-            resize: vertical;
-        }
-
-        .form-group input:focus,
-        .form-group select:focus,
-        .form-group textarea:focus {
-            outline: none;
-            border-color: var(--primary-color);
-        }
-
-        .submit-btn {
-            background: var(--primary-color);
-            color: white;
-            padding: 1rem 2rem;
-            border: none;
-            border-radius: 4px;
-            font-size: 1rem;
-            cursor: pointer;
-            transition: background-color 0.3s ease;
-        }
-
-        .submit-btn:hover {
-            background: #ff5252;
-        }
-
-        /* Footer */
-        footer {
-            background: var(--text-color);
-            color: white;
-            padding: 40px 0;
+        .tech-stack {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
             text-align: center;
         }
 
-        /* Responsive Design */
-        @media (max-width: 768px) {
-            .hero h1 {
-                font-size: 2.5rem;
-            }
+        .tech-item {
+            padding: 20px;
+            background: var(--accent-color);
+            border-radius: 8px;
+            font-weight: bold;
         }
     </style>
 </head>
 <body>
     <header>
         <nav class="container">
-            <div class="logo">Sunrise.ai</div>
+            <div class="logo">TW AI Agency</div>
         </nav>
     </header>
 
     <section class="hero">
         <div class="container">
-            <h1>Transforming the Future with AI</h1>
-            <p>Empowering businesses with cutting-edge artificial intelligence solutions</p>
+            <h1>AI & Business Workflow Automation</h1>
+            <p>From internal workflows to customer support to custom software development, we help your business harness AI & automations to transform how your business operates and grows.</p>
+            <a href="#get-started" class="btn">Get Started</a>
         </div>
     </section>
 
-    <section class="features">
+    <section id="get-started" class="section">
         <div class="container">
-            <h2>Our Solutions</h2>
-            <div class="features-grid">
-                <div class="feature-card">
-                    <h3>AI Automation</h3>
-                    <p>Streamline your workflows with intelligent automation powered by advanced AI algorithms.</p>
+            <h2 class="section-title">Let's get you automated with a few simple steps</h2>
+            <div class="process-steps">
+                <div class="step-card">
+                    <h3>1. Discovery Call</h3>
+                    <p>Kick off the process with a personalized call to understand what you want built, explore automation opportunities, and define the best path forward.</p>
                 </div>
-                <div class="feature-card">
-                    <h3>Machine Learning</h3>
-                    <p>Leverage state-of-the-art machine learning models to extract valuable insights from your data.</p>
+                <div class="step-card">
+                    <h3>2. Design & Prototyping</h3>
+                    <p>Develop a tailored Minimum Viable Product (MVP) that integrates AI agents and automates key processes to deliver immediate value. Personally test all solutions before they go live!</p>
                 </div>
-                <div class="feature-card">
-                    <h3>Natural Language Processing</h3>
-                    <p>Transform how you interact with text and language using our advanced NLP solutions.</p>
+                <div class="step-card">
+                    <h3>3. Deploy & Iterate</h3>
+                    <p>Launch your solution, gather real-time feedback, and continuously improve the system to maximize efficiency and scalability.</p>
+                    <ul style="margin-top: 1rem; list-style-position: inside;">
+                        <li>Production-ready code</li>
+                        <li>Full documentation</li>
+                    </ul>
                 </div>
             </div>
         </div>
     </section>
 
-    <section class="about">
+    <section class="section" style="background: var(--accent-color);">
         <div class="container">
-            <h2>About Sunrise.ai</h2>
-            <p>Sunrise.ai, a TW Private Limited Company, is at the forefront of AI innovation. We specialize in developing cutting-edge artificial intelligence solutions that help businesses transform their operations and achieve unprecedented growth.</p>
-        </div>
-    </section>
-
-    <section class="contact">
-        <div class="container">
-            <h2>Contact Us</h2>
-            <div class="contact-form">
-                <p>Ready to transform your business with AI? Fill out the form below and our team will get in touch with you.</p>
-                <form id="customerSurvey">
-                    <div class="form-group">
-                        <label for="founderName">Founder's Name *</label>
-                        <input type="text" id="founderName" name="founderName" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="businessName">Business Name *</label>
-                        <input type="text" id="businessName" name="businessName" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="revenue">Annual Revenue (USD) *</label>
-                        <select id="revenue" name="revenue" required>
-                            <option value="">Select Revenue Range</option>
-                            <option value="<1M">Less than $1M</option>
-                            <option value="1M-5M">$1M - $5M</option>
-                            <option value="5M-20M">$5M - $20M</option>
-                            <option value="20M+">$20M+</option>
-                        </select>
-                    </div>
-                    <div class="form-group">
-                        <label for="employees">Number of Employees *</label>
-                        <select id="employees" name="employees" required>
-                            <option value="">Select Employee Range</option>
-                            <option value="1-10">1-10</option>
-                            <option value="11-50">11-50</option>
-                            <option value="51-200">51-200</option>
-                            <option value="201+">201+</option>
-                        </select>
-                    </div>
-                    <div class="form-group">
-                        <label for="mobile">Mobile Number *</label>
-                        <input type="tel" id="mobile" name="mobile" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="email">Email Address *</label>
-                        <input type="email" id="email" name="email" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="address">Company Address *</label>
-                        <textarea id="address" name="address" required></textarea>
-                    </div>
-                    <div class="form-group">
-                        <label for="aiBudget">AI Implementation Budget (USD) *</label>
-                        <select id="aiBudget" name="aiBudget" required>
-                            <option value="">Select Budget Range</option>
-                            <option value="<50K">Less than $50K</option>
-                            <option value="50K-200K">$50K - $200K</option>
-                            <option value="200K-1M">$200K - $1M</option>
-                            <option value="1M+">$1M+</option>
-                        </select>
-                    </div>
-                    <button type="submit" class="submit-btn">Submit</button>
-                </form>
+            <h2 class="section-title">Our Technology Stack</h2>
+            <div class="tech-stack">
+                <div class="tech-item">N8N</div>
+                <div class="tech-item">OpenAI</div>
+                <div class="tech-item">Google Looker</div>
+                <div class="tech-item">Python</div>
             </div>
         </div>
     </section>
 
-    <footer>
+    <section class="section" style="background: #f3f4f6;">
         <div class="container">
-            <p>&copy; 2024 Sunrise.ai - TW Private Limited Company. All rights reserved.</p>
+            <h2 class="section-title">Top AI Automation Use Cases</h2>
+            <div class="process-steps">
+                <div class="step-card">
+                    <h3>Customer Service Automation</h3>
+                    <p>AI-powered chatbots and virtual assistants handle customer inquiries 24/7, reducing response times and support costs while maintaining consistent service quality.</p>
+                </div>
+                <div class="step-card">
+                    <h3>Document Processing</h3>
+                    <p>Automated extraction and processing of information from invoices, contracts, and forms, reducing manual data entry and improving accuracy.</p>
+                </div>
+                <div class="step-card">
+                    <h3>Data Analysis & Reporting</h3>
+                    <p>AI systems automatically analyze business data, generate insights, and create comprehensive reports, enabling data-driven decision making.</p>
+                </div>
+                <div class="step-card">
+                    <h3>Predictive Maintenance</h3>
+                    <p>AI algorithms monitor equipment performance and predict potential failures, optimizing maintenance schedules and preventing costly downtime.</p>
+                </div>
+                <div class="step-card">
+                    <h3>Workflow Automation</h3>
+                    <p>Intelligent process automation that streamlines business operations by automating repetitive tasks and coordinating complex workflows across departments.</p>
+                </div>
+            </div>
         </div>
-    </footer>
+    </section>
+
+    <section class="section">
+        <div class="container">
+            <h2 class="section-title">Contact Us</h2>
+            <form id="contact-form" class="contact-form" style="max-width: 600px; margin: 0 auto;">
+                <div style="margin-bottom: 1.5rem;">
+                    <label for="name" style="display: block; margin-bottom: 0.5rem;">Full Name *</label>
+                    <input type="text" id="name" name="name" required style="width: 100%; padding: 0.75rem; border: 1px solid #e5e7eb; border-radius: 5px;">
+                </div>
+                <div style="margin-bottom: 1.5rem;">
+                    <label for="email" style="display: block; margin-bottom: 0.5rem;">Email Address *</label>
+                    <input type="email" id="email" name="email" required style="width: 100%; padding: 0.75rem; border: 1px solid #e5e7eb; border-radius: 5px;">
+                </div>
+                <div style="margin-bottom: 1.5rem;">
+                    <label for="company" style="display: block; margin-bottom: 0.5rem;">Company Name</label>
+                    <input type="text" id="company" name="company" style="width: 100%; padding: 0.75rem; border: 1px solid #e5e7eb; border-radius: 5px;">
+                </div>
+                <div style="margin-bottom: 1.5rem;">
+                    <label for="employees" style="display: block; margin-bottom: 0.5rem;">Number of Employees</label>
+                    <select id="employees" name="employees" style="width: 100%; padding: 0.75rem; border: 1px solid #e5e7eb; border-radius: 5px;">
+                        <option value="1-10">1-10</option>
+                        <option value="11-50">11-50</option>
+                        <option value="51-200">51-200</option>
+                        <option value="201+">201+</option>
+                    </select>
+                </div>
+                <div style="margin-bottom: 1.5rem;">
+                    <label for="message" style="display: block; margin-bottom: 0.5rem;">How can we help? *</label>
+                    <textarea id="message" name="message" required rows="4" style="width: 100%; padding: 0.75rem; border: 1px solid #e5e7eb; border-radius: 5px;"></textarea>
+                </div>
+                <button type="submit" class="btn" style="width: 100%; background: var(--primary-color); color: white;">Send Message</button>
+            </form>
+        </div>
+    </section>
 </body>
 </html>
