@@ -1,2 +1,2 @@
 # sunriseai
-website and landign page for SunRise.ai
+website and landing page for SunRise.ai
